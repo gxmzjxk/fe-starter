@@ -1,0 +1,15 @@
+
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Header } from './Header.js';
+
+<Meta title="Components/Header" component={Header} />
+
+export const Template = (args) => <Header {...args} />
+
+<Canvas>
+  <Story name="Primary" args={{
+      label: 'Primary'
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
