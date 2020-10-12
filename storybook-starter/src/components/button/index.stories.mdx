@@ -1,0 +1,28 @@
+import {
+  Meta,
+  Story,
+  Canvas,
+  ArgsTable,
+  Props,
+  Description,
+  Title,
+  Subtitle,
+  Subheading,
+  Anchor,
+  Heading,
+} from "@storybook/addon-docs/blocks";
+import { Button } from './index.tsx';
+
+<Meta title="Components/Button" component={Button} />
+
+<Title>Button Component</Title>
+<Subtitle>Component Subtitle</Subtitle>
+<Heading>MDX-Heading</Heading>
+<Subheading>MDX-Subheading</Subheading>
+
+<ArgsTable component={Button} />
+
+<Canvas>
+  <Button kind="primary" scale="small" />
+  <Button kind="secondary" />
+</Canvas>
