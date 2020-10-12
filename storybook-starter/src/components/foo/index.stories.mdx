@@ -1,0 +1,25 @@
+import { Meta, Canvas, ArgsTable } from "@storybook/addon-docs/blocks";
+import { Foo } from "./index.tsx";
+
+<Meta title="Components/Foo" />
+
+## Foo Props
+
+<ArgsTable of={Foo} />
+
+## Foo.Item Props
+
+<ArgsTable of={Foo.Item} />
+
+## Union Props
+
+<ArgsTable components={{
+    'Foo': Foo,
+    'Foo.Item': Foo.Item
+}} />
+
+## Demo
+
+<Canvas>
+  <Foo />
+</Canvas>
